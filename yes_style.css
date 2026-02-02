@@ -22,9 +22,18 @@ h2 {
 }
 
 .bear {
-  width: 300px;
-  max-width: 80%;
+  width: 350px;       /* حجم أكبر للدبدوبين */
+  max-width: 90%;     /* مناسب للموبايل */
   border-radius: 20px;
+  margin-top: 10px;
+  animation: float 2s infinite; /* حركة لطيفة */
+}
+
+/* حركة بسيطة (يهزون شويه) */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
 }
 
 p {
